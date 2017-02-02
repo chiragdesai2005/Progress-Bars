@@ -23,10 +23,10 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
         
         $scope.currentBar = parseInt($scope.currentBar, 10);
         // console.log('$scope.max'+$scope.max);
-        if ($scope.max < $scope.currentBar) {
+        if ($scope.max <= $scope.currentBar) {
             //console.log('error');
             $scope.progressbarDataJson[$scope.index].type = "danger";
-        } else if ($scope.max > $scope.currentBar) {
+        } else if ($scope.max >= $scope.currentBar) {
             $scope.progressbarDataJson[$scope.index].type = "success";
         }
     };

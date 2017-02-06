@@ -20,12 +20,12 @@
                 <progressbar animate="true" value="x.bar" type="{{x.type}}"><b>{{x.bar}}%</b></progressbar>
             </div>
             <div class="row-fluid">
-                <div class="btn-group inline pull-left" ng-repeat="x in buttons">
+                <div class="btn-group inline pull-left" ng-repeat="x in buttons track by $index">
                     <button ng-click="calculateNewValue(x)" class="btn btn-sm btn-primary" type="button">{{x}}</button>&nbsp;&nbsp;
                 </div>
                 <div class="col-sm-4">
                     <select ng-model="progressbarnumber" class="form-control">
-                   <option ng-repeat="x in bars">progressbar{{$index}}</option> 
+                    <option ng-repeat="x in bars track by $index">progressbar{{$index}}</option>
                 </select>
                 </div>
             </div>

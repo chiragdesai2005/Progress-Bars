@@ -1,0 +1,27 @@
+{
+  "name": "progress-bars",
+  "version": "1.0.0",
+  "description": "open index.html in any browser",
+  "main": "script.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "minifier": "^0.8.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiragdesai2005/Progress-Bars.git"
+  },
+  "author": "chirag desai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiragdesai2005/Progress-Bars/issues"
+  },
+  "homepage": "https://github.com/chiragdesai2005/Progress-Bars#readme"
+}
